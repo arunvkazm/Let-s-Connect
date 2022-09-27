@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/rec_profile"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/profile_image"/>
+
+    <RelativeLayout
+        android:id="@+id/textMsg_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:background="@drawable/recievesms">
+
+        <TextView
+            android:id="@+id/text_msg"
+            android:layout_width="wrap_content"
+            android:maxWidth="250dp"
+            android:minWidth="120dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            tools:text="Hey what's up" />
+        <TextView
+            android:id="@+id/text_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_msg"
+            android:layout_alignEnd="@id/text_msg"
+            android:layout_marginEnd="8dp"
+            android:textSize="12sp"
+            tools:text=" 3:00 PM"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imgMSg_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:visibility="gone"
+        android:background="@drawable/recievesms">
+
+        <ImageView
+            android:id="@+id/send_message_image"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            tools:src="@drawable/ic_black_account"
+            android:contentDescription="@string/app_name" />
+        <TextView
+            android:id="@+id/img_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/send_message_image"
+            android:layout_alignEnd="@id/send_message_image"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            tools:text=" 3:00 PM"/>
+    </RelativeLayout>
+
+</FrameLayout>

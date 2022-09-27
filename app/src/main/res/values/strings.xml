@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Let\'s Connect</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="passwordl">Password</string>
+    <string name="i_have_not_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="sign_in">Sign In</string>
+    <string name="already_account">Already Account?</string>
+    <string name="name">Arun Vishwakarma</string>
+    <string name="send_message">send_message</string>
+    <string name="enter_a_message">Enter a Message...</string>
+</resources>
